@@ -1,0 +1,11 @@
+[Unit]
+Description = Todo Service
+[Service]
+User=todoapp
+Environment=REDIS_HOST=172.31.24.161
+Environment=ZIPKIN_URL=172.31.26.67
+ExecStart=/bin/node /home/todoapp/todo/server.js
+SyslogIdentifier=todo
+
+[Install]
+WantedBy=multi-user.target
