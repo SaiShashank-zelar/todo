@@ -2,7 +2,7 @@
 Description = Todo Service
 [Service]
 User=todoapp
-Environment=REDIS_HOST=172.31.24.161
+Environment=REDIS_HOST=172.31.18.191
 ExecStart=/bin/node /home/todoapp/todo/server.js
 SyslogIdentifier=todo
 
