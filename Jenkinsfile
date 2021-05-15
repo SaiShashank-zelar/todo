@@ -5,9 +5,7 @@ pipeline {
   stages {
     stage('Download Dependencies') {
       steps {
-        sh '''
-           npm install
-        '''
+        sh 'npm install'
       }
     }
     stage('Prepare Artifacts') {
