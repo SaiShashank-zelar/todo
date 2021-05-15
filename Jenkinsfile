@@ -8,9 +8,6 @@ pipeline {
         sh '''
            npm install
         '''
-        sh '''
-           npm start
-        '''
       }
     }
     stage('Prepare Artifacts') {
