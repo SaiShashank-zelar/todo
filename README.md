@@ -24,7 +24,7 @@
 ### To clone the git repository and run the file:-
 
   ```
-    #git clone https://github.com/zelar-soft-todoapp/todo.git
+    #git clone https://github.com/SaiShashank-zelar/todo.git
 
     #npm install
  
@@ -49,4 +49,4 @@
   ![Screenshot (572)](https://user-images.githubusercontent.com/82635540/116518387-cd4ca580-a8ed-11eb-9178-70eff6c7d7fc.png)
 
 
-#release 0.0.4
+
