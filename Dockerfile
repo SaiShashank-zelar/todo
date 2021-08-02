@@ -3,7 +3,7 @@ RUN         adduser -D todoapp
 USER        todoapp
 WORKDIR     /home/todoapp/todo
 COPY        / .
-RUN         npm install --unsafe-perm -g node-sass
+RUN         sudo npm install --unsafe-perm -g node-sass
 COPY        todo.service /etc/systemd/system/todo.service
 CMD         ["node", "server.js" ]
 
