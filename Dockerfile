@@ -1,9 +1,8 @@
 FROM        node:16-alpine
-RUN         adduser -D todoapp
-USER        todoapp
+RUN         mkdir -p /home/todoapp
 WORKDIR     /home/todoapp/todo
 COPY        / .
-RUN         sudo npm install --unsafe-perm -g node-sass
+RUN         npm install --unsafe-perm -g node-sass
 COPY        todo.service /etc/systemd/system/todo.service
 CMD         ["node", "server.js" ]
 
