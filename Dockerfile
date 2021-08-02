@@ -1,7 +1,5 @@
 FROM        node:16-alpine
-RUN         ln -sf /bin/bash /bin/sh
-RUN         adduser -m -s /bin/bash todoapp
-USER        todoapp
+RUN         adduser todoapp
 WORKDIR     /home/todoapp/todo
 COPY        / .
 RUN         npm install
