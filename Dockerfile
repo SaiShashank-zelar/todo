@@ -1,4 +1,4 @@
-FROM        node:alpine
+FROM        node:16-alpine
 RUN         ln -sf /bin/bash /bin/sh
 RUN         useradd -ms /bin/bash todoapp
 WORKDIR     /home/todoapp/todo
