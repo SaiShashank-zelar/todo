@@ -1,5 +1,5 @@
 FROM        node:16-alpine
-RUN         adduser -m -s /bin/bash todoapp
+RUN         useradd -m -s /bin/bash todoapp
 USER        todoapp
 WORKDIR     /home/todoapp/todo
 COPY        / .
