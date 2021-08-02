@@ -1,5 +1,5 @@
 FROM        node:16-alpine
-RUN         adduser -D -g todoapp
+RUN         adduser -D todoapp
 USER        todoapp
 WORKDIR     /home/todoapp/todo
 COPY        / .
